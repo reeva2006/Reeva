@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeva Lewis | Professional Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        
+        :root {
+            scroll-padding-top: 5rem;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #030712;
+            color: #f3f4f6;
+        }
+
+        .glass {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .skill-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .skill-card:hover {
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.05);
+            transform: translateY(-4px);
+        }
+
+        .timeline-dot {
+            position: relative;
+        }
+
+        .timeline-dot::before {
+            content: '';
+            position: absolute;
+            left: -33px;
+            top: 5px;
+            width: 14px;
+            height: 14px;
+            background: #3b82f6;
+            border-radius: 50%;
+            border: 3px solid #030712;
+            box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 border-b border-white/5 bg-[#030712]/80 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="text-xl font-extrabold tracking-tighter">REEVA<span class="text-blue-500">.</span></div>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-semibold tracking-wide">
+                <a href="#about" class="hover:text-blue-400 transition-colors uppercase">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition-colors uppercase">Tech Stack</a>
+                <a href="#education" class="hover:text-blue-400 transition-colors uppercase">Education</a>
+                <a href="#achievements" class="hover:text-blue-400 transition-colors uppercase">Milestones</a>
+                <a href="mailto:reevalewis2006@gmail.com" class="bg-blue-600 hover:bg-blue-500 px-5 py-2 rounded-lg transition-all">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-44 pb-32 px-6 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-blue-600/10 blur-[120px] rounded-full pointer-events-none"></div>
+        
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <h1 class="text-5xl md:text-8xl font-extrabold mb-6 tracking-tight">
+                Engineering the <br/><span class="gradient-text">Future of Web & AI</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Computer Science Engineer driven by logic and creativity. Specialized in developing intelligent systems and modern digital architectures.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:reevalewis2006@gmail.com" class="px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-slate-200 transition-all flex items-center">
+                    <i class="fas fa-paper-plane mr-2"></i> Hire Reeva
+                </a>
+                <div class="px-8 py-4 border border-white/10 rounded-xl font-bold bg-white/5 backdrop-blur flex items-center">
+                    <i class="fas fa-phone-alt mr-2 text-blue-400"></i> +91 8073141240
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-6 space-y-32">
+        
+        <section id="about" class="grid md:grid-cols-12 gap-12">
+            <div class="md:col-span-7">
+                <h2 class="text-blue-500 font-bold uppercase tracking-widest text-sm mb-4">Professional Summary</h2>
+                <p class="text-2xl text-slate-300 leading-snug">
+                    "A motivated Computer Science graduate eager to apply technical expertise in a practical work environment. I thrive on solving <span class="text-white font-semibold underline decoration-blue-500">complex problems</span> and exploring the frontiers of Generative AI."
+                </p>
+            </div>
+            <div class="md:col-span-5 grid grid-cols-2 gap-4">
+                <div class="glass p-6 rounded-2xl">
+                    <div class="text-3xl font-bold mb-1 italic text-blue-500">97.2%</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-500">SSLC Score</div>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <div class="text-3xl font-bold mb-1 italic text-purple-500">88.1%</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-500">PUC Score</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="mb-12">
+                <h2 class="text-3xl font-extrabold mb-2">Technical Arsenal</h2>
+                <p class="text-slate-500">Tools and technologies I use to build solutions.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="skill-card glass p-6 rounded-2xl flex items-center space-x-4">
+                    <i class="fab fa-python text-3xl text-blue-400"></i>
+                    <span class="font-bold">Python</span>
+                </div>
+                <div class="skill-card glass p-6 rounded-2xl flex items-center space-x-4">
+                    <i class="fab fa-js text-3xl text-yellow-400"></i>
+                    <span class="font-bold">JavaScript</span>
+                </div>
+                <div class="skill-card glass p-6 rounded-2xl flex items-center space-x-4">
+                    <i class="fas fa-brain text-3xl text-purple-400"></i>
+                    <span class="font-bold">Applied AI</span>
+                </div>
+                <div class="skill-card glass p-6 rounded-2xl flex items-center space-x-4">
+                    <i class="fas fa-cloud text-3xl text-cyan-400"></i>
+                    <span class="font-bold">Azure</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2 class="text-3xl font-extrabold mb-12">Academic Excellence</h2>
+            <div class="max-w-3xl ml-10 border-l border-white/10 space-y-12">
+                <div class="timeline-dot pl-10">
+                    <div class="text-blue-500 font-bold mb-2">2025 — 2029</div>
+                    <h3 class="text-xl font-bold">St. Aloysius Deemed To Be University</h3>
+                    <p class="text-slate-400">Bachelor of Engineering (Computer Science)</p>
+                </div>
+                <div class="timeline-dot pl-10">
+                    <div class="text-blue-500 font-bold mb-2">Graduated 2025</div>
+                    <h3 class="text-xl font-bold">St. Mary's Pre University College</h3>
+                    <p class="text-slate-400">PCMB Stream | Aggregate: 88.16%</p>
+                </div>
+                <div class="timeline-dot pl-10">
+                    <div class="text-blue-500 font-bold mb-2">Graduated 2023</div>
+                    <h3 class="text-xl font-bold">St. Joseph's High School</h3>
+                    <p class="text-slate-400">SSLC | Aggregate: 97.28%</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements">
+            <h2 class="text-3xl font-extrabold mb-12">Milestones & Recognition</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass p-8 rounded-3xl border-l-4 border-blue-500">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-trophy text-blue-500"></i>
+                        </div>
+                        <h4 class="font-bold text-lg">SOF Olympiad</h4>
+                    </div>
+                    <p class="text-slate-400 text-sm">International English Olympiad: Achieved Zonal Rank 3 and School Rank 2 in 2023.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl border-l-4 border-purple-500">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-500/10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-medal text-purple-500"></i>
+                        </div>
+                        <h4 class="font-bold text-lg">Abacus State Champion</h4>
+                    </div>
+                    <p class="text-slate-400 text-sm">Gold Medallist in State Level Abacus Competition, showcasing high-speed mental calculation.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-40 border-t border-white/5 py-12 bg-[#020617]">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-slate-500 text-sm">
+                &copy; 2026 Reeva Lewis. Chikmagalur, India.
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fab fa-github text-xl"></i></a>
+                <a href="mailto:reevalewis2006@gmail.com" class="text-slate-400 hover:text-white transition-colors"><i class="fas fa-envelope text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
